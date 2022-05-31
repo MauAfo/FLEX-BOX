@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+
+        <style>
+    
+    .flex-container{
+     
+        display: flex;
+        border: 3px solid rgb(29, 26, 26);
+        max-width: 300px;
+           
+    }        
+
+.wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.wrap-reverse{
+
+    flex-wrap:wrap-reverse;
+
+}
+
+    .item{
+
+        font-size: 24px;
+        height: 100%;
+        text-align:center;
+        width: 100px;
+        line-height: 50px;
+        min-width:50px;
+
+    }
+
+    .blue{
+        background-color: blue;
+        color: white;
+    }
+
+    .red{
+        background-color: red;
+    }
+
+    .lime{
+        background-color: limegreen;
+    }
+
+</style>
+</head>
+<body>
+    <p>
+        <h1>WRAP</h1>
+    </p>
+    <p>
+        <h3>Não fiz o nowrap pq ele é o PADRÃO.</h3>
+    </p>
+
+        <div class="flex-container wrap" >
+    <div class="item blue">1</div>
+    <div class="item red">2</div>
+    <div class="item lime">3</div>
+
+    <div class="item blue">1</div>
+    <div class="item red">2</div>
+    <div class="item lime">3</div>
+
+    <div class="item blue">1</div>
+    <div class="item red">2</div>
+    <div class="item lime">3</div>
+    </div>
+
+    <P></P>
+    <P>
+    <H1>WRAP-REVERSE</H1>
+</P>
+
+<div class="flex-container wrap-reverse">
+
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <div class="item lime">3</div>
+
+     
+    
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <div class="item lime">3</div>
+
+    
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <div class="item lime">3</div>
+
+    
+
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    
+    <div class="item red">15</div>
+    <div class="item blue">29</div>
+    
+
+
+
+</div>
+
+</body>
+</html>
